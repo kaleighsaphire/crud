@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(87, 87, 87, 20);
+    background-image: url("background.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+
+}
+h1 {
+    text-align:center;
+}
+.name{
+    color: rgb(167, 130, 93);
+    font-weight: 900;
+}
+li {
+    line-height: 1.5em;
+    list-style: none;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quotes{
+ width: 60%;
+ margin-left: 15%;
+}
+.bubbles{
+    line-height: 1.5em;
+    text-align: center;
+}
