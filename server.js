@@ -20,6 +20,9 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         app.use(bodyParser.urlencoded({ extended: true }))
         app.use(bodyParser.json())
         app.use(express.static('public'))
+        app.get('/', (request, response) => {
+            response.sendFile(__dirname + '/index.html')
+        }) 
 
         app.get('/', (req, res) => {
             quotesCollection.find().toArray()
